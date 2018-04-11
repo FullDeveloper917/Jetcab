@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="colorMyMain">#4d4365</color>
+    <color name="colorMyWhite">#FFFFFF</color>
+    <color name="colorMyGray_1">#F8F8F8</color>
+    <color name="colorMyGray_2">#F0F0F0</color>
+    <color name="colorMyGray_3">#F8F8F8</color>
+    <color name="colorMyGray_4">#EBEBEB</color>
+    <color name="colorMyGray_5">#E3E3E3</color>
+    <color name="colorMyGray_6">#BBBBBB</color>
+    <color name="colorMyGray_7">#a0a0a0</color>
+    <color name="colorMyGray_8">#828282</color>
+    <color name="colorMyGray_9">#444444</color>
+    <color name="colorMyGray_10">#101010</color>
+    <color name="colorMyBlack">#000000</color>
+
+    <color name="colorEditViewBottomLine">#46FEE1</color>
+
+    <color name="colorWarning">#FF4356</color>
+
+    <color name="editTextBackgroundColor">#3FFF</color>
+
+    <color name="flightDetailPanelColor">#4d4d4f</color>
+
+    <color name="colorDarkGray">#707070</color>
+    <color name="colorBrigitGray">#A1A1A1</color>
+</resources>

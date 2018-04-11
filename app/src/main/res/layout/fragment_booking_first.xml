@@ -1,0 +1,253 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutMain_BookingFirstFrg"
+    tools:context="com.david.jetcab.Fragments.BookingFragments.BookingFirstFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="70sp"
+        android:paddingRight="70sp"
+        android:paddingTop="50sp"
+        android:paddingBottom="20sp"
+        android:orientation="vertical"
+        android:background="@color/colorMyWhite">
+
+        <AutoCompleteTextView
+            android:id="@+id/actFromCity_BookingFirstFrg"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:background="@drawable/city_edit_text_bg"
+            android:ems="10"
+            android:hint="FROM"
+            android:paddingLeft="25sp"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:textColor="@color/colorMyGray_1"
+            android:textColorHint="@color/colorMyGray_1"
+            android:layout_marginTop="30sp"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/actToCity_BookingFirstFrg"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/city_edit_text_bg"
+            android:ems="10"
+            android:hint="TO"
+            android:paddingLeft="25sp"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:textColor="@color/colorMyGray_1"
+            android:textColorHint="@color/colorMyGray_1"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtDate_BookingFirstFrg"
+                android:layout_width="0sp"
+                android:layout_height="40sp"
+                android:layout_weight="1"
+                android:layout_marginRight="15sp"
+                android:background="@drawable/block_border_white_bg"
+                android:hint="DATE"
+                android:textSize="16sp"
+                android:textColor="@color/colorMyGray_10"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/txtTime_BookingFirstFrg"
+                android:layout_width="0sp"
+                android:layout_height="40sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20sp"
+                android:background="@drawable/block_border_white_bg"
+                android:padding="5sp"
+                android:hint="TIME"
+                android:textSize="16sp"
+                android:textColor="@color/colorMyGray_10"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auction"
+                android:textColor="@color/colorMyGray_8"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                android:layout_gravity="center"/>
+
+            <ToggleButton
+                android:id="@+id/tglAuction_BookingFirstFrg"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="20sp"
+                android:background="@drawable/toggle_selector"
+                android:checked="false"
+                android:textOff=""
+                android:textOn=""
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:id="@+id/layoutFlightInfo_BookingFirstFrg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ETA:"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorMyGray_10"/>
+
+                <TextView
+                    android:id="@+id/txtEta_BookingFirstFrg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:text="xxxxx"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorMyGray_10"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5sp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price between"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorMyGray_10"/>
+
+                    <TextView
+                        android:id="@+id/txtLowPrice_BookingFirstFrg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="xxxxx"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorMyGray_10"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:text="and"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorMyGray_10"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorMyGray_10"/>
+
+                    <TextView
+                        android:id="@+id/txtTopPrice_BookingFirstFrg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="xxxxx"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorMyGray_10"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtBuySeats_BookingFirstFrg"
+                android:layout_width="match_parent"
+                android:layout_height="25sp"
+                android:background="@drawable/city_edit_text_bg"
+                android:layout_marginTop="5sp"
+                android:hint="Seat Count to order"
+                android:textColorHint="@color/colorMyGray_1"
+                android:textColor="@color/colorMyGray_1"
+                android:textSize="14sp"
+                android:inputType="number"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:gravity="left|center"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnContinue_BookingFirstFrg"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:text="Continue"
+            android:textSize="24sp"
+            android:textColor="@color/colorMyWhite"
+            android:layout_gravity="center"
+            android:background="#e6e7e8"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

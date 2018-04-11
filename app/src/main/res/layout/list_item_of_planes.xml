@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110sp"
+    android:id="@+id/layoutMain_OnePlane"
+    android:paddingLeft="20sp"
+    android:paddingRight="20sp"
+    android:background="@color/colorMyWhite">
+
+
+    <ImageView
+        android:id="@+id/imgPlane_OnePlane"
+        android:layout_width="160sp"
+        android:layout_height="match_parent"
+        android:src="@drawable/no_image"
+        android:scaleType="centerInside"/>
+
+    <LinearLayout
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="10sp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtName_OnePlane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MGHTLS"
+                android:textSize="14sp"
+                android:textColor="@color/colorMyGray_9"
+                android:textAllCaps="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Capacity:  "
+                    android:textSize="14sp"
+                    android:textColor="@color/colorMyGray_9"
+                    android:textAllCaps="true"/>
+
+                <TextView
+                    android:id="@+id/txtSeatCount_OnePlane"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7 seats"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorMyGray_9"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cruise speed:  "
+                android:textSize="14sp"
+                android:textColor="@color/colorMyGray_9"
+                android:textAllCaps="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+
+                <TextView
+                    android:id="@+id/txtSpeed_OnePlane"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="900"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorMyGray_9"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" km/hr"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorMyGray_9"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

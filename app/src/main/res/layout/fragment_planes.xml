@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutMain_PlanesFrg"
+    tools:context="com.david.jetcab.Fragments.PlanesFragment"
+    android:background="@color/colorMyWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp">
+
+            <View
+                android:layout_width="0sp"
+                android:layout_height="2sp"
+                android:layout_weight="1"
+                android:background="#6e7072"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Available Planes"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorMyGray_8"
+                    android:textAllCaps="true"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In Real Time"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorMyGray_8"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="0sp"
+                android:layout_height="2sp"
+                android:layout_weight="1"
+                android:background="#6e7072"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listPlanes_PlanesFrg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="10sp"
+            android:divider="@color/colorMyWhite"
+            android:layout_marginTop="10sp"/>
+    </LinearLayout>
+
+
+
+</FrameLayout>

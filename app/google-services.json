@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "381959976661",
+    "firebase_url": "https://flight-system-92fa3.firebaseio.com",
+    "project_id": "flight-system-92fa3",
+    "storage_bucket": "flight-system-92fa3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381959976661:android:94ab28eb9937c525",
+        "android_client_info": {
+          "package_name": "com.david.jetcab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381959976661-5gosgbg0h0ll8n7653gc1l3j10h06s8s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.david.jetcab",
+            "certificate_hash": "782c2873144c3ba71b713fa4deb8117fbdff69f2"
+          }
+        },
+        {
+          "client_id": "381959976661-iqn9k75v30bqf8i5cduo0i4j4d5v2qgf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBITIFdGdDUSSZBpM35FRbxoKDt4z39aKk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381959976661-iqn9k75v30bqf8i5cduo0i4j4d5v2qgf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,349 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutMain_MenuFrg"
+    tools:context="com.david.jetcab.Fragments.MenuFragments.MenuFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorMyWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp">
+
+            <View
+                android:layout_width="0sp"
+                android:layout_height="2sp"
+                android:layout_weight="1"
+                android:background="#6e7072"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main Menu"
+                android:textSize="18sp"
+                android:textColor="@color/colorMyGray_8"
+                android:textAllCaps="true"
+                android:paddingLeft="30sp"
+                android:paddingRight="30sp"/>
+
+            <View
+                android:layout_width="0sp"
+                android:layout_height="2sp"
+                android:layout_weight="1"
+                android:background="#6e7072"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20sp"
+            android:paddingBottom="20sp"
+            android:orientation="vertical">
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/layoutPlanes_MenuFrg"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5sp">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="45sp"-->
+                    <!--android:layout_height="45sp"-->
+                    <!--android:src="@drawable/plane"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="0sp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="20sp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="Planes"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textColor="@color/colorMyGray_8"-->
+                    <!--android:textAllCaps="true"-->
+                    <!--android:layout_gravity="center"/>-->
+
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/layoutDestinations_MenuFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="50sp">
+
+                <ImageView
+                    android:layout_width="70sp"
+                    android:layout_height="50sp"
+                    android:src="@drawable/ic_destination"
+                    android:scaleType="center"/>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_weight="1"
+                    android:text="My Destinations"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorMyGray_8"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/layoutProfile_MenuFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp">
+
+                <ImageView
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:src="@drawable/ic_profile"
+                    android:scaleType="center"/>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_weight="1"
+                    android:text="My profile"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorMyGray_8"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/layoutPaymentMethod_MenuFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp">
+
+                <ImageView
+                    android:layout_width="50sp"
+                    android:layout_height="45sp"
+                    android:src="@drawable/ic_payment"
+                    android:scaleType="center"/>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_weight="1"
+                    android:text="Payment method"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorMyGray_8"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/layoutFAQ_MenuFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp">
+
+                <ImageView
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:src="@drawable/ic_faq"
+                    android:scaleType="center"/>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_weight="1"
+                    android:text="FAQ"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorMyGray_8"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/layoutLegal_MenuFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp">
+
+                <ImageView
+                    android:layout_width="55sp"
+                    android:layout_height="55sp"
+                    android:src="@drawable/ic_legal"
+                    android:scaleType="center"/>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="1"
+                    android:text="Legal"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorMyGray_8"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/layoutAbout_MenuFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp">
+
+                <ImageView
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:src="@drawable/ic_about"
+                    android:scaleType="center"/>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_weight="1"
+                    android:text="About JetCab"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorMyGray_8"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/layoutReview_MenuFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp">
+
+                <ImageView
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:src="@drawable/ic_star"/>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_weight="1"
+                    android:text="Feedback"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorMyGray_8"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/layoutContact_MenuFrg"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5sp">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="45sp"-->
+                    <!--android:layout_height="45sp"-->
+                    <!--android:padding="7sp"-->
+                    <!--android:src="@drawable/ic_call"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="0sp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="20sp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="Contact Us"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textColor="@color/colorMyGray_8"-->
+                    <!--android:textAllCaps="true"-->
+                    <!--android:layout_gravity="center"/>-->
+
+            <!--</LinearLayout>-->
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/layoutLogOut_MenuFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp">
+
+                <ImageView
+                    android:layout_width="45sp"
+                    android:layout_height="50sp"
+                    android:src="@drawable/ic_logout"
+                    android:scaleType="center"/>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_weight="1"
+                    android:text="Log Out"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorMyGray_8"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

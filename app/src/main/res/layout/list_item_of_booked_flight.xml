@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutItem_OneBookedFlight"
+    android:layout_width="match_parent"
+    android:layout_height="240sp"
+    android:padding="16sp"
+    android:background="@color/flightDetailPanelColor">
+
+    <LinearLayout
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtCities_OneBookedFlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/colorMyGray_1"
+            android:textSize="14sp"
+            android:textAllCaps="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ETD: "
+                android:textColor="@color/colorMyGray_1"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:id="@+id/txtETD_OneBookedFlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24/09/18 24:40"
+                android:textColor="@color/colorMyGray_1"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ETD: "
+                android:textColor="@color/colorMyGray_1"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:id="@+id/txtETA_OneBookedFlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24/09/18 24:40"
+                android:textColor="@color/colorMyGray_1"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgPlane_OneBookedFlight"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_marginTop="8sp"
+            android:layout_weight="1"
+            android:src="@drawable/no_image"
+            android:scaleType="centerInside"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8sp"
+            android:text="BOOKED"
+            android:textSize="18sp"
+            android:textColor="@color/flightDetailPanelColor"
+            android:background="@drawable/flight_state_bg"/>
+
+        <TextView
+            android:id="@+id/txtPrice_OneBookedFlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:text="$46,000"
+            android:textColor="@color/colorMyGray_1"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:text="TAIL NUMBER"
+            android:textColor="@color/colorMyGray_1"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/txtTailNum_OneBookedFlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XA-HEL"
+            android:textColor="@color/colorMyGray_1"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:text="SEATS:"
+            android:textColor="@color/colorMyGray_1"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/txtSeatCount_OneBookedFlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textColor="@color/colorMyGray_1"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

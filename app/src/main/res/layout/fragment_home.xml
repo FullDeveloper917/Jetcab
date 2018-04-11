@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutMain_HomeFrg"
+    android:background="@color/colorMyWhite"
+    tools:context="com.david.jetcab.Fragments.HomeFragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:orientation="vertical"
+            android:layout_margin="30sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnInterest_HomeFrg"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Interest"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="18sp"
+                    android:background="@color/colorDarkGray"/>
+
+                <Button
+                    android:id="@+id/btnBooked_HomeFrg"
+                    android:layout_marginLeft="2sp"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Booked"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="18sp"
+                    android:background="@color/colorBrigitGray"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_weight="1"
+                android:layout_marginTop="2sp">
+
+                <Button
+                    android:id="@+id/btnAvailable_HomeFrg"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Available"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="18sp"
+                    android:background="@color/colorBrigitGray"/>
+
+                <Button
+                    android:id="@+id/btnMyFlights_HomeFrg"
+                    android:layout_marginLeft="2sp"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="My Flights"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="18sp"
+                    android:background="@color/colorBrigitGray"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listFlights_HomeFrg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20sp"/>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

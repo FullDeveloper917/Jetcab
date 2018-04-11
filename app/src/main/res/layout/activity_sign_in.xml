@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutMain_SignIn"
+    tools:context="com.david.jetcab.SignInActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/dashboard_bg"
+        android:scaleType="centerCrop"/>
+
+    <EditText
+        android:id="@+id/edtEmail_SignIn"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="80dp"
+        android:hint="USER ID"
+        android:paddingLeft="15sp"
+        android:textSize="18sp"
+        android:textColor="@color/colorMyGray_1"
+        android:textColorHint="@color/colorMyGray_7"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:gravity="left|center"
+        android:background="@color/editTextBackgroundColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/edtPassword_SignIn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="80dp"
+        android:background="@color/editTextBackgroundColor"
+        android:gravity="left|center"
+        android:hint="PASSWORD"
+        android:paddingLeft="15sp"
+        android:textColor="@color/colorMyGray_1"
+        android:textColorHint="@color/colorMyGray_7"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <Button
+        android:id="@+id/btnLogin_SignIn"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transparent_bg"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="@color/colorMyGray_1"
+        android:textSize="42sp"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.61"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73"
+        tools:ignore="RtlHardcoded,RtlSymmetry" >
+
+        <Button
+            android:id="@+id/btnSignUp_SignIn"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:gravity="center"
+            android:text="REGISTER"
+            android:textColor="@color/colorMyGray_1"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:background="@drawable/transparent_bg"
+            />
+
+        <Button
+            android:id="@+id/btnForgot_SignIn"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:gravity="center"
+            android:text="PASSWORD?"
+            android:textColor="@color/colorMyGray_1"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:layout_marginLeft="80sp"
+            android:background="@drawable/transparent_bg"
+            />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnContact_SignIn"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="0sp"
+        android:drawableLeft="@drawable/ic_call"
+        android:drawablePadding="5sp"
+        android:text="CONTACT US"
+        android:textAllCaps="false"
+        android:textColor="@color/colorMyGray_1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_SignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+
+</android.support.constraint.ConstraintLayout>

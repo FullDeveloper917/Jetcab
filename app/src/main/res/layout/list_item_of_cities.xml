@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40sp"
+    android:background="@drawable/block_border_white_bg">
+
+    <TextView
+        android:id="@+id/txtName_OneCity"
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="20sp"
+        android:text="City name"
+        android:textSize="16sp"
+        android:textColor="@color/colorMyGray_8"
+        android:textAllCaps="true"
+        android:gravity="left|center"/>
+
+    <Button
+        android:id="@+id/btnClose_OneCity"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginRight="5sp"
+        android:scaleType="fitXY"
+        android:background="@drawable/ic_close"
+        android:layout_gravity="center"/>
+</LinearLayout>

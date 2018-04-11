@@ -1,0 +1,20 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.1'
+    }
+}
+
+apply plugin: 'android-library'
+
+group='com.tjerkw.slideexpandable'
+archivesBaseName='library'
+version = '1.0'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion = '27.0.3'
+}

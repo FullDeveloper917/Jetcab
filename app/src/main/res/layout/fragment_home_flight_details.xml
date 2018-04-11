@@ -1,0 +1,334 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutMain_HomeFlightDetailsFrg"
+    tools:context="com.david.jetcab.Fragments.HomeFragments.HomeFlightDetailsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20sp"
+            android:background="#6d6f71">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/flight_details"
+                android:textSize="24sp"
+                android:textColor="@color/colorMyWhite"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:background="#67686b"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="2"/>
+
+            <ImageView
+                android:id="@+id/imgPlane_HomeFlightDetailsFrg"
+                android:layout_width="match_parent"
+                android:layout_height="170sp"
+                android:src="@drawable/no_image"
+                android:scaleType="fitCenter"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/plane"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorMyWhite"
+                        android:textAllCaps="true"/>
+
+                    <TextView
+                        android:id="@+id/txtPlaneName_HomeFlightDetailsFrg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:text="GTM503"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorMyWhite"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cruise speed:  "
+                        android:textSize="14sp"
+                        android:textColor="@color/colorMyWhite"/>
+
+                    <TextView
+                        android:id="@+id/txtPlaneSpeed_HomeFlightDetailsFrg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="900"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorMyWhite"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" km/hr"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorMyWhite"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/from"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorMyWhite"
+                        android:textAllCaps="true"/>
+
+                    <TextView
+                        android:id="@+id/txtFromCityName_HomeFlightDetailsFrg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:text="Toluca TLC"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorMyWhite"/>
+
+                </LinearLayout>
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="0sp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/hangar"-->
+                        <!--android:textSize="14sp"-->
+                        <!--android:textColor="@color/colorMyWhite"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="10sp"-->
+                        <!--android:text="3"-->
+                        <!--android:textSize="14sp"-->
+                        <!--android:textColor="@color/colorMyWhite"/>-->
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/to"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorMyWhite"
+                    android:textAllCaps="true"/>
+
+                <TextView
+                    android:id="@+id/txtToCityName_HomeFlightDetailsFrg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:text="Cancun CNC"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorMyWhite"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total seats"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorMyWhite"
+                        android:textAllCaps="true"/>
+
+                    <TextView
+                        android:id="@+id/txtTotalSeatsCount_HomeFlightDetailFrg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorMyWhite"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="80sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Available seats"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorMyWhite"
+                        android:textAllCaps="true"/>
+
+                    <TextView
+                        android:id="@+id/txtAvailableSeatsCount_HomeFlightDetailFrg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorMyWhite"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/etd"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorMyWhite"/>
+
+                <TextView
+                    android:id="@+id/txtDepartureTime_HoemFlightDetailFrg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:text="24/07/17 23:34"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorMyWhite"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eta"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorMyWhite"/>
+
+                <TextView
+                    android:id="@+id/txtArrivalTime_HomeFlightDetailFrg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:text="24/07/17 23:34"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorMyWhite"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="2"/>
+
+            <Button
+                android:id="@+id/btnBook_HomeFlightDetailsFrg"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book"
+                android:textSize="36sp"
+                android:textColor="@color/colorMyWhite"
+                android:layout_gravity="center" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnClose_HomeFlightDetailsFrg"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_alignEnd="@+id/linearLayout"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/linearLayout"
+            android:padding="0sp"
+            android:scaleType="fitXY"
+            android:background="@drawable/ic_close" />
+
+    </RelativeLayout>
+
+</FrameLayout>

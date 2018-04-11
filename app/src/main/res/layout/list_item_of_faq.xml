@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/layoutMain_OneFaq">
+
+    <TextView
+        android:id="@+id/txtQuestion_OneFaq"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:text="Hello World"
+        android:textSize="14sp"
+        android:textColor="@color/colorMyWhite"
+        android:background="#5a5a5a"
+        android:gravity="center_vertical"/>
+
+    <!-- this is the expandable view that is initially hidden and will slide out when the more button is pressed -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/expandable">
+
+        <!-- put whatever you want in the expandable view -->
+        <TextView
+            android:id="@+id/txtAnswer_OneFaq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:textSize="11sp"
+            android:textColor="@color/colorMyBlack"
+            android:background="#e5e5e5"/>
+
+    </LinearLayout>
+</LinearLayout>

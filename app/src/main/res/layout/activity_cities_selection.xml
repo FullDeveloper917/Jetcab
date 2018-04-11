@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutMain_CitiesSelection"
+    tools:context="com.david.jetcab.CitiesSelectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorMyWhite"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/btnPrev_CitiesSelection"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50sp"
+            android:text="prev"
+            android:textAllCaps="true"
+            android:textColor="@color/colorMyWhite"
+            android:textSize="18sp"
+            android:background="#e6e7e8"/>
+
+        <TextView
+            android:layout_width="220sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5sp"
+            android:gravity="center"
+            android:padding="0sp"
+            android:text="@string/add_destinations_description1"
+            android:textColor="@color/colorMyGray_8"
+            android:textSize="10sp"
+            android:textAllCaps="true"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="70sp"
+            android:layout_marginRight="70sp"
+            android:layout_marginTop="30sp">
+
+            <AutoCompleteTextView
+                android:id="@+id/actSearchCity_CitiesSelection"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:background="#a7a9ac"
+                android:ems="10"
+                android:hint="CITY"
+                android:paddingLeft="20sp"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:textColor="@color/colorMyGray_1"
+                android:textColorHint="@color/colorMyGray_1"
+                android:textAllCaps="true"/>
+
+            <ListView
+                android:id="@+id/listCities_CitiesSelection"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                android:dividerHeight="10sp"
+                android:divider="@color/colorMyWhite"
+                android:layout_marginTop="20sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnFinish_CitiesSelection"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30sp"
+            android:layout_marginTop="30sp"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:text="finish"
+            android:textAllCaps="true"
+            android:textColor="@color/colorMyWhite"
+            android:textSize="18sp"
+            android:background="#808285"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar_CitiesSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+
+</android.support.constraint.ConstraintLayout>

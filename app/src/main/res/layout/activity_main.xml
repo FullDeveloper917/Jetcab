@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMyWhite"
+    android:id="@+id/layoutMain_Main"
+    tools:context="com.david.jetcab.MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layoutControlTab_Main"
+            android:layout_width="match_parent"
+            android:layout_height="70sp">
+
+            <ImageButton
+                android:id="@+id/btnHome_Main"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_home_selector"
+                android:scaleType="center"/>
+
+            <ImageButton
+                android:id="@+id/btnBook_Main"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_search_selector"
+                android:scaleType="center"/>
+
+            <ImageButton
+                android:id="@+id/btnPlanes_Main"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:src="@drawable/ic_plane_selector"
+                android:scaleType="center" />
+
+            <ImageButton
+                android:id="@+id/btnNotifications_Main"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_notification_selector"
+                android:scaleType="center"/>
+
+            <ImageButton
+                android:id="@+id/btnMenu_Main"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_menu_selector"
+                android:scaleType="center"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frgMain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="0sp"
+                android:layout_height="2sp"
+                android:layout_weight="1"
+                android:background="#6e7072"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/btnContact_Main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:text="Contact Us"
+                android:textSize="20sp"
+                android:textColor="@color/colorMyGray_8"
+                android:textAllCaps="true" />
+
+            <View
+                android:layout_width="0sp"
+                android:layout_height="2sp"
+                android:layout_weight="1"
+                android:background="#6e7072"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutItem_OneBookingPlane"
+    android:layout_width="match_parent"
+    android:layout_height="120sp"
+    android:background="#a7a9ac">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="7sp"
+        android:layout_marginBottom="7sp"
+        android:padding="5sp"
+        android:background="#797b7d">
+
+        <CheckBox
+            android:id="@+id/chkSelected_OneBookingPlane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"/>
+
+        <ImageView
+            android:id="@+id/imgPlane_OneBookingPlane"
+            android:layout_width="150sp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5sp"
+            android:src="@drawable/no_image"
+            android:scaleType="centerInside"/>
+
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtName_OneBookingPlane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:text="GWHWHW"
+                android:textSize="16sp"
+                android:textColor="@color/colorMyGray_2"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtPrice_OneBookingPlane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="$200000"
+                android:textSize="16sp"
+                android:textColor="@color/colorMyGray_2"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">"
+            android:layout_marginRight="20sp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

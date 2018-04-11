@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutMain_Review"
+    android:orientation="vertical"
+    android:background="@color/colorMyWhite"
+    android:gravity="center"
+    tools:context="com.david.jetcab.ReviewActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JET"
+            android:textColor="@color/colorMyGray_9"
+            android:textSize="72sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAB"
+            android:textColor="@color/colorMyGray_9"
+            android:textSize="48sp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:layout_marginTop="30sp">
+
+        <LinearLayout
+            android:id="@+id/layoutForm_Review"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/txtFlightName_Review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rate your experience with us in your flight toluca - cancun"
+                android:textColor="@color/colorMyGray_9"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:gravity="center_horizontal"/>
+
+            <RatingBar
+                android:id="@+id/rateReview_Review"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_marginTop="5sp"
+                android:numStars="5"
+                android:stepSize="1.0"
+                android:rating="5"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Give us your opinion, so we can improve our service"
+                android:textColor="@color/colorMyGray_9"
+                android:textSize="10sp"
+                android:textAllCaps="true"
+                android:gravity="center_horizontal"/>
+
+            <EditText
+                android:id="@+id/edtOpinion_Review"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_marginTop="5sp"
+                android:padding="10sp"
+                android:textSize="14sp"
+                android:textColor="@color/colorMyGray_9"
+                android:gravity="left"
+                android:inputType="textMultiLine"
+                android:background="@drawable/block_border_white_bg"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnSubmit_Review"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="150sp"
+                android:layout_height="40sp"
+                android:layout_marginBottom="20sp"
+                android:text="submit"
+                android:textColor="@color/colorMyWhite"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:background="#797b7d"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtReviewThanks_Review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30sp"
+            android:padding="40sp"
+            android:text="Thanks for your feedback"
+            android:textColor="@color/colorMyWhite"
+            android:textSize="24sp"
+            android:textAllCaps="true"
+            android:gravity="center_horizontal"
+            android:background="@drawable/review_board_bg"
+            android:visibility="invisible"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

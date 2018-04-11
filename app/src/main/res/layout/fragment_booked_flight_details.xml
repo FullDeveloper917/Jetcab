@@ -1,0 +1,346 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutMain_BookedFlightDetailsFrg"
+    tools:context="com.david.jetcab.Fragments.HomeFragments.BookedFlightDetailsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:orientation="vertical"
+            android:background="@color/colorMyWhite">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/flight_details"
+                android:textSize="24sp"
+                android:textColor="@color/colorMyWhite"
+                android:textAllCaps="true"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:layout_marginTop="10sp"
+                android:background="#e6e7e8"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20sp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/layoutInfo_BookedFlightDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#a7a9ac"
+                    android:paddingTop="20sp"
+                    android:paddingBottom="20sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="30sp"
+                        android:orientation="vertical"
+                        android:background="#797b7d">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Your seats: "
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorMyWhite"
+                                    android:textAllCaps="true"/>
+
+                                <TextView
+                                    android:id="@+id/txtUserSeatCount_HomeFlightDetailFrg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/colorMyWhite"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:paddingLeft="10sp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Paid per seat:"
+                                        android:textSize="12sp"
+                                        android:textColor="@color/colorMyWhite"
+                                        android:textAllCaps="true"/>
+
+                                    <TextView
+                                        android:id="@+id/txtSeatPerCost_HomeFlightDetailFrg"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="$ 2,000"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/colorMyWhite"
+                                        android:layout_gravity="right"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Total:"
+                                        android:textSize="12sp"
+                                        android:textColor="@color/colorMyWhite"/>
+
+                                    <TextView
+                                        android:id="@+id/txtTotalCost_HomeFlightDetailFrg"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="$4,000"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/colorMyWhite"
+                                        android:layout_gravity="right"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp">
+
+                            <LinearLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/from"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorMyWhite"
+                                    android:textAllCaps="true"/>
+
+                                <TextView
+                                    android:id="@+id/txtFromCityName_BookedFlightDetailsFrg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:text="Toluca TLC"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/colorMyWhite"
+                                    />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/to"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorMyWhite"
+                                android:textAllCaps="true"/>
+
+                            <TextView
+                                android:id="@+id/txtToCityName_BookedFlightDetailsFrg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10sp"
+                                android:text="Cancun CNC"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorMyWhite"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/etd"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorMyWhite"/>
+
+                            <TextView
+                                android:id="@+id/txtDepartureTime_HoemFlightDetailFrg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10sp"
+                                android:text="24/07/17 23:34"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorMyWhite"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/eta"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorMyWhite"/>
+
+                            <TextView
+                                android:id="@+id/txtArrivalTime_HomeFlightDetailFrg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10sp"
+                                android:text="24/07/17 23:34"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorMyWhite"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp">
+
+                            <LinearLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Plane: "
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorMyWhite"
+                                    android:textAllCaps="true"/>
+
+                                <TextView
+                                    android:id="@+id/txtPlaneName_BookedFlightDetailsFrg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="GTM503"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/colorMyWhite"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.5">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cruise speed:  "
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorMyWhite"
+                                    android:textAllCaps="true"/>
+
+                                <TextView
+                                    android:id="@+id/txtPlaneSpeed_BookedFlightDetailsFrg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="900"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/colorMyWhite"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" km/hr"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/colorMyWhite"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <ImageView
+                    android:id="@+id/imgPlane_BookedFlightDetailsFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginRight="30sp"
+                    android:layout_marginTop="-45sp"
+                    android:src="@drawable/no_image"
+                    android:scaleType="fitStart"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnClose_BookedFlightDetailsFrg"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="40sp"
+            android:layout_marginRight="3sp"
+            android:layout_alignEnd="@+id/linearLayout"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/linearLayout"
+            android:padding="0sp"
+            android:scaleType="fitXY"
+            android:background="@drawable/ic_close" />
+
+    </RelativeLayout>
+
+</FrameLayout>

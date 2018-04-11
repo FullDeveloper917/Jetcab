@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorMyWhite"
+    tools:context="com.david.jetcab.ConfirmPassActivity"
+    android:gravity="center_horizontal"
+    android:id="@+id/layoutMain_ConfirmPass">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JET"
+            android:textColor="@color/colorMyGray_9"
+            android:textSize="72sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAB"
+            android:textColor="@color/colorMyGray_9"
+            android:textSize="48sp" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="3"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layoutForm_ConfirmPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="210sp"
+                android:layout_height="wrap_content"
+                android:text="Enter the e-mail you used to register"
+                android:textColor="@color/colorMyGray_9"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:gravity="center_horizontal"/>
+
+            <EditText
+                android:id="@+id/edtEmail_ConfirmPass"
+                android:layout_width="200sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="20sp"
+                android:hint="EMAIL"
+                android:textSize="14sp"
+                android:textColor="@color/colorMyGray_8"
+                android:textColorHint="@color/colorMyGray_8"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/block_border_white_bg"/>
+
+            <Button
+                android:id="@+id/btnConfirm_ConfirmPass"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_marginTop="70sp"
+                android:layout_width="150sp"
+                android:layout_height="40sp"
+                android:text="confirm"
+                android:textColor="@color/colorMyWhite"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:background="#797b7d"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutReportMessage_ConfirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12sp"
+                android:background="#797b7d"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24sp"
+                android:text="You will receive an e-mail to restore your password inmediately"
+                android:textColor="@color/colorMyGray_9"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:gravity="center_horizontal"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12sp"
+                android:background="#797b7d"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="2sp"
+            android:layout_weight="1"
+            android:background="#6e7072"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btnContact_ConfirmPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:text="Contact Us"
+            android:textSize="20sp"
+            android:textColor="@color/colorMyGray_8"
+            android:textAllCaps="true" />
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="2sp"
+            android:layout_weight="1"
+            android:background="#6e7072"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

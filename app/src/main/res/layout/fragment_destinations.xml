@@ -1,0 +1,98 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutMain_DestinationFrg"
+    tools:context="com.david.jetcab.Fragments.MenuFragments.DestinationsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorMyWhite"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp">
+
+            <View
+                android:layout_width="0sp"
+                android:layout_height="2sp"
+                android:layout_weight="1"
+                android:background="#6e7072"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="240sp"
+                android:layout_height="wrap_content"
+                android:text="@string/add_destinations_description2"
+                android:textSize="10sp"
+                android:textColor="@color/colorMyGray_8"
+                android:textAllCaps="true"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="0sp"
+                android:layout_height="2sp"
+                android:layout_weight="1"
+                android:background="#6e7072"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="70sp"
+            android:layout_marginRight="70sp"
+            android:layout_marginTop="30sp">
+
+            <AutoCompleteTextView
+                android:id="@+id/actSearchCity_MyDestination"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:background="#a7a9ac"
+                android:ems="10"
+                android:hint="CITY"
+                android:paddingLeft="20sp"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:textColor="@color/colorMyGray_1"
+                android:textColorHint="@color/colorMyGray_1"
+                android:textAllCaps="true"/>
+
+            <ListView
+                android:id="@+id/listCities_MyDestination"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                android:dividerHeight="10sp"
+                android:divider="@color/colorMyWhite"
+                android:layout_marginTop="20sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave_MyDestination"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10sp"
+            android:layout_marginTop="20sp"
+            android:text="Save"
+            android:textColor="@color/colorMyGray_1"
+            android:textSize="20sp"
+            android:background="#a7a9ac"/>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
